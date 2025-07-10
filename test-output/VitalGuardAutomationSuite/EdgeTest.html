@@ -1,0 +1,1249 @@
+<html>
+<head>
+<title>TestNG:  EdgeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>115/15/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jul 06 18:35:13 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>91 seconds (91569 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 150/80, Systolic must be between 90 and 140</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input: 150/80 expected [Systolic must be between 90 and 140] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2094160050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2094160050'><pre>java.lang.AssertionError: Error message mismatch for BP input: 150/80 expected [Systolic must be between 90 and 140] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 85/80, Systolic must be between 90 and 140</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input: 85/80 expected [Systolic must be between 90 and 140] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1993622293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993622293'><pre>java.lang.AssertionError: Error message mismatch for BP input: 85/80 expected [Systolic must be between 90 and 140] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999/999, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace418270189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace418270189'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert()'><b>validateInvalidAgeAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 12.5, Please enter a valid age between 1 and 120.</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for age input: 12.5 expected [Please enter a valid age between 1 and 120.] but found [Please enter a valid pulse rate between 40 and 180 bpm.]
+	at com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert(TestRunner.java:355)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928147913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928147913'><pre>java.lang.AssertionError: Error message mismatch for age input: 12.5 expected [Please enter a valid age between 1 and 120.] but found [Please enter a valid pulse rate between 40 and 180 bpm.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert(TestRunner.java:355)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 100.5, Pulse rate must be an integer.</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for pulse input: 100.5 expected [Pulse rate must be an integer.] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidPulseInput(TestRunner.java:264)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295552981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295552981'><pre>java.lang.AssertionError: Error message mismatch for pulse input: 100.5 expected [Pulse rate must be an integer.] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidPulseInput(TestRunner.java:264)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999/999, Systolic must be between 90 and 140</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input: 999/999 expected [Systolic must be between 90 and 140] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56015902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace56015902'><pre>java.lang.AssertionError: Error message mismatch for BP input: 999/999 expected [Systolic must be between 90 and 140] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/95, Diastolic must be between 60 and 90</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input: 120/95 expected [Diastolic must be between 60 and 90] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1226064637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1226064637'><pre>java.lang.AssertionError: Error message mismatch for BP input: 120/95 expected [Diastolic must be between 60 and 90] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 150/80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace209891369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace209891369'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: , Use format: systolic/diastolic (e.g., 120/80)</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input:  expected [Use format: systolic/diastolic (e.g., 120/80)] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968142147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1968142147'><pre>java.lang.AssertionError: Error message mismatch for BP input:  expected [Use format: systolic/diastolic (e.g., 120/80)] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 85/80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace827658233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace827658233'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeInput()'><b>validateInvalidAgeInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 12.5, Age must be an integer.</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for age input: 12.5 expected [Age must be an integer.] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidAgeInput(TestRunner.java:255)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906380367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906380367'><pre>java.lang.AssertionError: Error message mismatch for age input: 12.5 expected [Age must be an integer.] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidAgeInput(TestRunner.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/55, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440603532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440603532'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 100.5, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for age input: 100.5 expected [Please enter a valid pulse rate between 40 and 180 bpm.] but found [Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).]
+	at com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert(TestRunner.java:368)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191610199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1191610199'><pre>java.lang.AssertionError: Error message mismatch for age input: 100.5 expected [Please enter a valid pulse rate between 40 and 180 bpm.] but found [Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert(TestRunner.java:368)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/55, Diastolic must be between 60 and 90</td>
+<td><div><pre>java.lang.AssertionError: Error message mismatch for BP input: 120/55 expected [Diastolic must be between 60 and 90] but found []
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1775079967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775079967'><pre>java.lang.AssertionError: Error message mismatch for BP input: 120/55 expected [Diastolic must be between 60 and 90] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPInput(TestRunner.java:274)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/95, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2065619560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2065619560'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.vitalGuard.tests.TestRunner.validateInvalidBPAlert(TestRunner.java:387)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 95.0, 66.0, 122/82, 94.1, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 90.0, 70.0, 118/78, 94.6, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 25.0, 55.0, 125/85, 94.0, Your pulse rate is low. This could be normal for athletes, but consider consulting a doctor if you experience dizziness or fatigue.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: /80, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 65.0, 72.0, 125/85, 96.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 50.0, 85.0, 135/88, 96.7, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 75.0, 60.0, 135/85, 94.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: -10, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 70.0, 68.0, 130/88, 95.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 75.0, 60.0, 135/85, 94.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeInput()'><b>validateInvalidAgeInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 121, Age must be between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 115.0, 55.0, 138/85, 80.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/80.5, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: @#, Pulse rate must be a number.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: , Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: abc, Pulse rate must be a number.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 10.0, 85.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/80.5, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120 80, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120-80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.valNavbarlink()'><b>valNavbarlink</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 2, pulseRate</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 80.0, 58.0, 138/90, 83.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120.5/80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 70.0, 68.0, 130/88, 95.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 90.0, 70.0, 118/78, 94.6, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert()'><b>validateInvalidAgeAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 121, Please enter a valid age between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120/, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120 80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120.0, 52.0, 140/90, 79.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120.5/80, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: @#, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 15.0, 95.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 30.0, 88.0, 130/85, 98.5, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 90.0, 70.0, 118/78, 94.6, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 45.0, 92.0, 130/85, 97.4, Your pulse rate is elevated. Try relaxation techniques and consider reducing caffeine intake.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 181, Pulse rate should be between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: -10, Pulse rate should be between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters:  , Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 50.0, 85.0, 135/88, 96.7, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: abc/xyz, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 80.0, 58.0, 138/90, 83.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 80.0, 58.0, 138/90, 83.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 105.0, 60.0, 130/88, 91.7, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 39, Pulse rate should be between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 75.0, 60.0, 135/85, 94.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 30.0, 88.0, 130/85, 98.5, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 25.0, 55.0, 125/85, 94.0, Your pulse rate is low. This could be normal for athletes, but consider consulting a doctor if you experience dizziness or fatigue.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 40.0, 70.0, 120/80, 100.0, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 115.0, 55.0, 138/85, 80.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120-80, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 60.0, 65.0, 120/80, 98.0, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.valNavbarlink()'><b>valNavbarlink</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 3, bloodPressure</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 85.0, 62.0, 120/80, 95.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeInput()'><b>validateInvalidAgeInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 0, Age must be between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999, Pulse rate should be between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 35.0, 60.0, 118/76, 99.4, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 45.0, 92.0, 130/85, 97.4, Your pulse rate is elevated. Try relaxation techniques and consider reducing caffeine intake.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 85.0, 62.0, 120/80, 95.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 60.0, 65.0, 120/80, 98.0, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 105.0, 60.0, 130/88, 91.7, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 85.0, 62.0, 120/80, 95.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 100.0, 64.0, 125/85, 93.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 40.0, 70.0, 120/80, 100.0, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert()'><b>validateInvalidAgeAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: -5, Please enter a valid age between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert()'><b>validateInvalidAgeAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999, Please enter a valid age between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 110.0, 58.0, 135/90, 80.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.valNavbarlink()'><b>valNavbarlink</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 4, ageFactor</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 5.0, 90.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 115.0, 55.0, 138/85, 80.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 110.0, 58.0, 135/90, 80.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: /80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 35.0, 60.0, 118/76, 99.4, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.valNavbarlink()'><b>valNavbarlink</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 5, foot</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 30.0, 88.0, 130/85, 98.5, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 39, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 10.0, 85.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 55.0, 78.0, 140/90, 95.5, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 110.0, 58.0, 135/90, 80.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 105.0, 60.0, 130/88, 91.7, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 25.0, 55.0, 125/85, 94.0, Your pulse rate is low. This could be normal for athletes, but consider consulting a doctor if you experience dizziness or fatigue.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120.0, 52.0, 140/90, 79.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeAlert()'><b>validateInvalidAgeAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 0, Please enter a valid age between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 5.0, 90.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 35.0, 60.0, 118/76, 99.4, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 65.0, 72.0, 125/85, 96.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 95.0, 66.0, 122/82, 94.1, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 70.0, 68.0, 130/88, 95.2, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeInput()'><b>validateInvalidAgeInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 999, Age must be between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: @120/@80, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 15.0, 95.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 45.0, 92.0, 130/85, 97.4, Your pulse rate is elevated. Try relaxation techniques and consider reducing caffeine intake.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 65.0, 72.0, 125/85, 96.5, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.valNavbarlink()'><b>valNavbarlink</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 1, container</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 40.0, 70.0, 120/80, 100.0, General recommendations:</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 15.0, 95.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidAgeInput()'><b>validateInvalidAgeInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: -5, Age must be between 1 and 120.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 100.0, 64.0, 125/85, 93.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 5.0, 90.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 60.0, 65.0, 120/80, 98.0, General recommendations:</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 55.0, 78.0, 140/90, 95.5, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 50.0, 85.0, 135/88, 96.7, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: abc, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPAlert()'><b>validateInvalidBPAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: @120/@80, Please enter blood pressure in the format systolic/diastolic (e.g., 120/80).</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard()'><b>validateVitalGuard</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 120.0, 52.0, 140/90, 79.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseAlert()'><b>validateInvalidPulseAlert</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 181, Please enter a valid pulse rate between 40 and 180 bpm.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidPulseInput()'><b>validateInvalidPulseInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters:  , Pulse rate must be a number.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateInvalidBPInput()'><b>validateInvalidBPInput</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: abc/xyz, Use format: systolic/diastolic (e.g., 120/80)</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 55.0, 78.0, 140/90, 95.5, Your blood pressure is higher than optimal. Consider reducing sodium intake, maintaining a healthy weight, and regular exercise.</td>
+<td></td>
+<td>1</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuard2()'><b>validateVitalGuard2</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 10.0, 85.0, 120/80, 100.0, For your age group, regular physical activity and balanced nutrition are essential for healthy development.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 95.0, 66.0, 122/82, 94.1, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+<tr>
+<td title='com.vitalGuard.tests.TestRunner.validateVitalGuardCalculate()'><b>validateVitalGuardCalculate</b><br>Test class: com.vitalGuard.tests.TestRunner<br>Parameters: 100.0, 64.0, 125/85, 93.0, For seniors, regular check-ups, staying active, and monitoring blood pressure are particularly important.</td>
+<td></td>
+<td>0</td>
+<td>com.vitalGuard.tests.TestRunner@651aed93</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.vitalGuard.tests.TestRunner">
+        <methods>
+          <include name="validateInvalidPulseInput" invocation-numbers="4"/>
+          <include name="validateVitalGuardCalculate" invocation-numbers="32 33 34 35 36 37 38 39 40 23 24 25 26 27 28 29 30 31"/>
+          <include name="validateVitalGuard" invocation-numbers="32 33 34 35 36 37 38 39 40 23 24 25 26 27 28 29 30 31"/>
+          <include name="validateVitalGuard2" invocation-numbers="32 33 34 35 36 37 38 39 40 23 24 25 26 27 28 29 30 31"/>
+          <include name="validateInvalidPulseAlert" invocation-numbers="4"/>
+          <include name="setup"/>
+          <include name="validateInvalidBPAlert" invocation-numbers="5 6 7 8 14"/>
+          <include name="validateInvalidBPInput" invocation-numbers="0 5 6 7 8 14"/>
+          <include name="tearDown"/>
+          <include name="validateInvalidAgeInput" invocation-numbers="3"/>
+          <include name="validateInvalidAgeAlert" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.vitalGuard.tests.TestRunner -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
